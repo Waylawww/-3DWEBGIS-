@@ -1,0 +1,238 @@
+#VRML V2.0 utf8
+
+
+DEF Box01 Transform {
+  translation 0 0 -24.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5882 0.5882 0.5882
+          ambientIntensity 1.0
+          specularColor 0 0 0
+          shininess 0.145
+          transparency 0
+        }
+        texture ImageTexture {
+          url "cizhuan.jpg"
+        }
+      }
+      geometry DEF Box01-FACES IndexedFaceSet {
+        ccw TRUE
+        solid TRUE
+        coord DEF Box01-COORD Coordinate { point [
+          -25 0 0.5, 25 0 0.5, -25 0 -0.5, 25 0 -0.5, -25 10 0.5, 
+          25 10 0.5, -25 10 -0.5, 25 10 -0.5]
+        }
+        texCoord DEF Box01-TEXCOORD TextureCoordinate { point [
+          0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 
+          1 1]
+        }
+        coordIndex [
+          0, 2, 3, -1, 3, 1, 0, -1, 4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 5, -1, 
+          5, 4, 0, -1, 1, 3, 7, -1, 7, 5, 1, -1, 3, 2, 6, -1, 
+          6, 7, 3, -1, 2, 0, 4, -1, 4, 6, 2, -1]
+        texCoordIndex [
+          9, 11, 10, -1, 10, 8, 9, -1, 8, 9, 11, -1, 11, 10, 8, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1]
+        }
+    }
+  ]
+}
+DEF Box02 Transform {
+  translation 0 0 24.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5882 0.5882 0.5882
+          ambientIntensity 1.0
+          specularColor 0 0 0
+          shininess 0.145
+          transparency 0
+        }
+        texture ImageTexture {
+          url "cizhuan.jpg"
+        }
+      }
+      geometry DEF Box02-FACES IndexedFaceSet {
+        ccw TRUE
+        solid TRUE
+        coord DEF Box02-COORD Coordinate { point [
+          -25 0 0.5, 25 0 0.5, -25 0 -0.5, 25 0 -0.5, -25 10 0.5, 
+          25 10 0.5, -25 10 -0.5, 25 10 -0.5]
+        }
+        texCoord DEF Box02-TEXCOORD TextureCoordinate { point [
+          0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 
+          1 1]
+        }
+        coordIndex [
+          0, 2, 3, -1, 3, 1, 0, -1, 4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 5, -1, 
+          5, 4, 0, -1, 1, 3, 7, -1, 7, 5, 1, -1, 3, 2, 6, -1, 
+          6, 7, 3, -1, 2, 0, 4, -1, 4, 6, 2, -1]
+        texCoordIndex [
+          9, 11, 10, -1, 10, 8, 9, -1, 8, 9, 11, -1, 11, 10, 8, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1]
+        }
+    }
+  ]
+}
+DEF Box03 Transform {
+  translation -24.5 0 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5882 0.5882 0.5882
+          ambientIntensity 1.0
+          specularColor 0 0 0
+          shininess 0.145
+          transparency 0
+        }
+        texture ImageTexture {
+          url "cizhuan.jpg"
+        }
+      }
+      geometry DEF Box03-FACES IndexedFaceSet {
+        ccw TRUE
+        solid TRUE
+        coord DEF Box03-COORD Coordinate { point [
+          -0.5 0 25, 0.5 0 25, -0.5 0 -25, 0.5 0 -25, -0.5 10 25, 
+          0.5 10 25, -0.5 10 -25, 0.5 10 -25]
+        }
+        texCoord DEF Box03-TEXCOORD TextureCoordinate { point [
+          0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 
+          1 1]
+        }
+        coordIndex [
+          0, 2, 3, -1, 3, 1, 0, -1, 4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 5, -1, 
+          5, 4, 0, -1, 1, 3, 7, -1, 7, 5, 1, -1, 3, 2, 6, -1, 
+          6, 7, 3, -1, 2, 0, 4, -1, 4, 6, 2, -1]
+        texCoordIndex [
+          9, 11, 10, -1, 10, 8, 9, -1, 8, 9, 11, -1, 11, 10, 8, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1]
+        }
+    }
+  ]
+}
+DEF Box04 Transform {
+  translation 24.5 0 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5882 0.5882 0.5882
+          ambientIntensity 1.0
+          specularColor 0 0 0
+          shininess 0.145
+          transparency 0
+        }
+        texture ImageTexture {
+          url "cizhuan.jpg"
+        }
+      }
+      geometry DEF Box04-FACES IndexedFaceSet {
+        ccw TRUE
+        solid TRUE
+        coord DEF Box04-COORD Coordinate { point [
+          -0.5 0 25, 0.5 0 25, -0.5 0 -25, 0.5 0 -25, -0.5 10 25, 
+          0.5 10 25, -0.5 10 -25, 0.5 10 -25]
+        }
+        texCoord DEF Box04-TEXCOORD TextureCoordinate { point [
+          0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 
+          1 1]
+        }
+        coordIndex [
+          0, 2, 3, -1, 3, 1, 0, -1, 4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 5, -1, 
+          5, 4, 0, -1, 1, 3, 7, -1, 7, 5, 1, -1, 3, 2, 6, -1, 
+          6, 7, 3, -1, 2, 0, 4, -1, 4, 6, 2, -1]
+        texCoordIndex [
+          9, 11, 10, -1, 10, 8, 9, -1, 8, 9, 11, -1, 11, 10, 8, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1]
+        }
+    }
+  ]
+}
+DEF Box05 Transform {
+  translation 0.0007124 0 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5882 0.5882 0.5882
+          ambientIntensity 1.0
+          specularColor 0 0 0
+          shininess 0.145
+          transparency 0
+        }
+        texture ImageTexture {
+          url "cizhuan.jpg"
+        }
+      }
+      geometry DEF Box05-FACES IndexedFaceSet {
+        ccw TRUE
+        solid TRUE
+        coord DEF Box05-COORD Coordinate { point [
+          -25 0 25, 25 0 25, -25 0 -25, 25 0 -25, -25 1 25, 25 1 25, 
+          -25 1 -25, 25 1 -25]
+        }
+        texCoord DEF Box05-TEXCOORD TextureCoordinate { point [
+          0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 
+          1 1]
+        }
+        coordIndex [
+          0, 2, 3, -1, 3, 1, 0, -1, 4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 5, -1, 
+          5, 4, 0, -1, 1, 3, 7, -1, 7, 5, 1, -1, 3, 2, 6, -1, 
+          6, 7, 3, -1, 2, 0, 4, -1, 4, 6, 2, -1]
+        texCoordIndex [
+          9, 11, 10, -1, 10, 8, 9, -1, 8, 9, 11, -1, 11, 10, 8, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1]
+        }
+    }
+  ]
+}
+DEF Box06 Transform {
+  translation 0.0007124 7.284 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.5882 0.5882 0.5882
+          ambientIntensity 1.0
+          specularColor 0 0 0
+          shininess 0.145
+          transparency 0
+        }
+        texture MovieTexture {
+          url "water.gif"
+		  loop TRUE
+        }
+      }
+      geometry DEF Box06-FACES IndexedFaceSet {
+        ccw TRUE
+        solid TRUE
+        coord DEF Box06-COORD Coordinate { point [
+          -24.5 0 24.5, 24.5 0 24.5, -24.5 0 -24.5, 24.5 0 -24.5, 
+          -24.5 0.5 24.5, 24.5 0.5 24.5, -24.5 0.5 -24.5, 24.5 0.5 -24.5]
+        }
+        texCoord DEF Box06-TEXCOORD TextureCoordinate { point [
+          0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 1 1, 0 0, 1 0, 0 1, 
+          1 1]
+        }
+        coordIndex [
+          0, 2, 3, -1, 3, 1, 0, -1, 4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 5, -1, 
+          5, 4, 0, -1, 1, 3, 7, -1, 7, 5, 1, -1, 3, 2, 6, -1, 
+          6, 7, 3, -1, 2, 0, 4, -1, 4, 6, 2, -1]
+        texCoordIndex [
+          9, 11, 10, -1, 10, 8, 9, -1, 8, 9, 11, -1, 11, 10, 8, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1, 
+          4, 5, 7, -1, 7, 6, 4, -1, 0, 1, 3, -1, 3, 2, 0, -1]
+        }
+    }
+  ]
+}

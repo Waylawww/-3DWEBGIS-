@@ -1,0 +1,570 @@
+#VRML V2.0 utf8
+
+Background {
+	skyAngle [
+		1.309  1.571
+	]
+	skyColor [
+		1.0 1.0 1.0
+		0.2 0.2 1.0
+		1.0 1.0 1.0
+	]
+}
+
+
+
+
+DEF redlou Group {
+
+		
+	
+	children [
+			DEF Clock TimeSensor
+		{
+			cycleInterval 5.0
+		  	loop FALSE 
+		}
+		
+			DEF Orientation OrientationInterpolator
+		{
+			 key
+				[
+				    0.00,
+				    0.20,
+				    0.40,
+				    0.60,
+				    0.80,
+				    1.00,
+			        ]
+			keyValue[
+					0.0 1.0 0.0  0.0,
+					0.0 1.0 0.0  3.14,			
+					0.0 1.0 0.0  6.28,	
+					0.0 1.0 0.0  0.0,	
+					0.0 1.0 0.0  3.14,
+					0.0 1.0 0.0  6.28,
+				 ]
+	     	}
+		#grass
+	DEF grass Transform {
+			translation	0 0 0
+			children [
+			Shape {
+			
+	    appearance Appearance	{
+		texture	ImageTexture {
+					url	"db.jpg"
+					repeatS	TRUE
+					repeatT	FALSE
+					
+				}}
+		geometry  IndexedFaceSet {
+			solid FALSE
+			coord Coordinate {
+				point [-8 0 -8,8 0 -8,8 0 12,-8 0 12]
+
+			}
+			
+			coordIndex [0,1,2,3,-1]	   
+		}
+
+		
+	}
+]} ,
+
+
+#JSofroad
+Transform {
+	translation	-4 3 6
+	children [Shape { 
+appearance Appearance { 
+material  Material { 
+diffuseColor 0.5 0.25 1.0 
+} 
+} 
+
+geometry Cylinder { 
+	
+radius 0
+height 0 
+} 
+}
+DEF Sensor1 TouchSensor { }
+]
+} ,
+#zhuq
+ DEF Grouprotation Transform {
+	translation	0 2 2.5
+	rotation 0 2 2.5 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material{				 
+						
+			}
+			texture	ImageTexture {
+			url "qb.jpg"}
+			}
+			geometry Box {
+				size 3 4 0.2
+			}
+		}
+	]
+}  ,
+
+#zq
+DEF zq  Transform {
+	translation	-5.5 1 2.5
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 2 2 0.1
+			}
+		}
+
+	]
+} ,
+
+#yq
+DEF yq Transform {
+	translation	5.5 1 2.5
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 2 2 0.1
+			}
+		}
+
+	]
+} ,
+#yzq
+Transform {
+	translation	3 1 1.6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 3 2 0.1
+			}
+		}
+
+	]
+} ,
+#zzq
+Transform {
+	translation	-3 1 1.6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 3 2 0.1
+			}
+		}
+
+	]
+} ,
+#bjq
+DEF bjq Transform {
+	translation	0 2 -2
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 13 4 0.1
+			}
+		}
+
+	]
+} ,
+
+#zc
+Transform {
+	translation	-6.4 1 0.25
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 0.1 2 4.5
+			}
+		}
+
+	]
+} ,
+#yc
+Transform {
+	translation	6.4 1 0.25
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 0.1 2 4.5
+			}
+		}
+
+	]
+} ,
+#zf
+Transform {
+	translation	-1.5 1 1.75
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 0.1 2 1.5
+			}
+		}
+
+	]
+} ,
+#zf2
+Transform {
+	translation	-4.5 1 1.75
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 0.1 2 1.5
+			}
+		}
+
+	]
+} ,
+ #yf
+Transform {
+	translation	1.5 1 1.75
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 0.1 2 1.5
+			}
+		}
+
+	]
+} ,
+
+ #yf2
+Transform {
+	translation	4.5 1 1.75
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"qb.jpg"
+				}
+			}
+			geometry Box {
+				size 0.1 2 1.5
+			}
+		}
+
+	]
+} ,
+
+DEF	wd Group {
+	children [
+   #FM 1
+  Shape {
+	    appearance Appearance	{
+		material DEF Base_Color1 Material { diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [-5.5 2.8 0,-4.4 2 0,-4.4 2 2.5,-5.5 2.8 2.5]
+
+			}
+			coordIndex [0,1,2,3,-1]	   
+		}		
+} ,
+
+ Shape {
+	    appearance Appearance	{
+			material DEF Base_Color2 Material{diffuseColor 0.5 0.3 0.2}} 
+		    geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [-5.5 2.8 0,-5.5 2.8 2.5,-6.4 2 2.5,-6.4 2 0]
+
+			}
+			coordIndex [0,1,2,3,-1]	   
+		}		
+} ,
+
+#FM2
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color3 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [5.5 2.8 0,4.4 2 0,4.4 2 2.5,5.5 2.8 2.5]
+
+			}
+			coordIndex [0,1,2,3,-1]	   
+		}		
+} ,
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color4 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [5.5 2.8 0,5.5 2.8 2.5,6.4 2 2.5,6.4 2 0]
+
+			}
+			coordIndex [0,1,2,3,-1]	   
+		}		
+} ,
+
+#ZFM
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color5 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [0 5.8 -2,1.5 4 -2,1.5 4.5 -0.75,1.5 4 2,1.5 4 2.5,0 5.8 2.5]
+
+			}
+			coordIndex [0,1,2,3,4,5,-1]	   
+		}		
+} ,
+	
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color6 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [0 5.8 -2,-1.5 4 -2,-1.5 4.5 -0.75,-1.5 4 2,-1.5 4 2.5,0 5.8 2.5]
+
+			}
+			coordIndex [0,1,2,3,4,5,-1]	   
+		}		
+} ,
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color7 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [1.5 4 -2,1.5 4.5 -0.75,6.5 4.5 -0.75,6.5 4 -2]
+
+			}
+			coordIndex [0,1,2,3,-1]	   
+		}		
+} ,
+
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color8 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [1.5 4.5 -0.75,6.5 4.5 -0.75,6.4 2 0,5.5 2.8 0,4.4 2 0,4.4 2 1.6,3.0 2 1.6,1.5 2 1.6,1.5 2 2.5,1.5 4 2.5]
+
+			}
+			coordIndex [0,1,2,3,4,5,6,7,8,9,-1]	   
+		}		
+} ,
+
+
+#ZHLG
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color9 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [-1.5 4 -2,-1.5 4.5 -0.75,-6.5 4.5 -0.75,-6.5 4 -2]
+
+			}
+			coordIndex [0,1,2,3,-1]	   
+		}		
+} ,
+
+ Shape {
+	    appearance Appearance	{
+		material DEF Base_Color10 Material{diffuseColor 0.5 0.3 0.2}}
+		geometry  IndexedFaceSet {
+		
+			solid FALSE
+			coord Coordinate {
+				point [-1.5 4.5 -0.75,-6.5 4.5 -0.75,-6.4 2 0,-5.5 2.8 0,-4.4 2 0,-4.4 2 1.6,-3.0 2 1.6,-1.5 2 1.6,-1.5 2 2.5,-1.5 4 2.5]
+
+			}
+			coordIndex [0,1,2,3,4,5,6,7,8,9,-1]	   
+		}		
+	}]} ,
+DEF	Mychange Script	{
+	  eventIn SFBool touched
+	  eventIn SFBool myration
+      field SFBool lit FALSE	  
+      eventOut SFColor base_emissive_color 
+	  eventOut SFBool  isloop
+	  url [
+		  "javascript:
+		  function touched(value)
+		  {
+			  if (value) 
+			  {
+	               if (lit) 
+	               { lit = false;
+	                   base_emissive_color = new SFColor(1,0,0); }
+	               else 
+	               {lit = true;
+	                   base_emissive_color = new SFColor(0,0,1); }
+				 } 
+				 }
+
+		    function myration(value)
+			{
+				     isloop=true;
+			}
+
+	
+				" 
+	  ]
+
+	
+}
+
+DEF	Delete Script	{
+	field SFNode mynodegrass USE grass
+	field SFNode mynodeGrouprotation USE Grouprotation
+	field SFNode mynodezq USE zq
+	field SFNode mynodeyq USE yq
+	field SFNode mynodebjq USE bjq
+	field SFNode mynodewd USE wd
+	eventIn SFBool clickedmove_grass
+	eventIn SFBool clickedmove_Grouprotation
+	eventIn SFBool clickedmove_zq
+	eventIn SFBool clickedmove_yq
+	eventIn SFBool clickedmove_bjq
+	eventIn SFBool clickedmove_wd
+		
+	eventOut MFNode  addorremoveNode
+	
+	 url [
+		  "javascript:
+		  function clickedmove_Grouprotation(value)
+		  {
+			  addorremoveNode=new MFNode(mynodeGrouprotation/*SFNode n1, SFNode n2, ...*/);
+			  
+		  }
+		  function clickedmove_grass(value)
+		  {
+			  addorremoveNode=new MFNode(mynodegrass/*SFNode n1, SFNode n2, ...*/);
+			  
+		  }
+		  function clickedmove_zq(value)
+		  {
+			  addorremoveNode=new MFNode(mynodezq/*SFNode n1, SFNode n2, ...*/);
+			  
+		  }
+		  function clickedmove_yq(value)
+		  {
+			  addorremoveNode=new MFNode(mynodeyq/*SFNode n1, SFNode n2, ...*/);
+			  
+		  }
+		  function clickedmove_bjq(value)
+		  {
+			  addorremoveNode=new MFNode(mynodebjq/*SFNode n1, SFNode n2, ...*/);
+			  
+		  }
+		  function clickedmove_wd(value)
+		  {
+			  addorremoveNode=new MFNode(mynodewd/*SFNode n1, SFNode n2, ...*/);
+			  
+		  }
+		  
+		 "
+	  ]
+
+}
+
+]
+      ROUTE Sensor1.isActive TO Mychange.touched
+	  ROUTE Sensor1.isActive TO Delete.clickedmove_Grouprotation
+	  ROUTE	Sensor1.isActive TO	Delete.clickedmove_grass
+	  ROUTE	Sensor1.isActive TO	Delete.clickedmove_zq
+	  ROUTE	Sensor1.isActive TO	Delete.clickedmove_yq
+	  ROUTE	Sensor1.isActive TO	Delete.clickedmove_bjq
+	  ROUTE	Sensor1.isActive TO	Delete.clickedmove_wd
+	  ROUTE	Delete.addorremoveNode TO redlou.removeChildren
+	  ROUTE Mychange.base_emissive_color TO Base_Color1.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color2.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color3.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color4.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color5.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color6.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color7.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color8.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color9.set_emissiveColor
+	  ROUTE Mychange.base_emissive_color TO Base_Color10.set_emissiveColor
+	  ROUTE	Mychange.isloop	TO Clock.loop
+	  ROUTE Clock.fraction_changed TO Orientation.set_fraction
+      ROUTE Orientation.value_changed TO Grouprotation.set_rotation
+  }						 

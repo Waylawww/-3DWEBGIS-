@@ -1,0 +1,84 @@
+﻿body
+{
+    background-color:LightGrey;
+    }
+h1
+{
+     text-align:center;  
+    }
+#wrlromm
+{
+    width:100%;
+    height:380px;
+    
+    }
+#toolroom
+{
+    position:relative;
+    height:220px;
+    
+    
+    }
+#mess
+{
+    height:220px;
+    position :absolute;
+    left:1000px;
+    top :0px;
+    border:solid;
+    
+    
+    }
+#remotool
+{
+   
+    position :absolute;
+    top :0px;
+    left:40px;
+    width:200px;
+    height:220px;
+    border:solid;
+    border-bottom-width:medium;
+    }
+.ok
+{
+    background-color:SeaGreen;
+    position: absolute;
+    
+    top: 50%;
+    left :70%;
+ 
+    }
+#addtool
+{
+   position: absolute;
+    left :29%;
+    top :0px;
+    width:200px;
+    height:220px;
+    border:solid;
+    border-bottom-width:medium;
+    
+    }
+    
+    
+#attributetool
+{
+    position: absolute;
+    left :55%;
+    top :0px;
+    width:200px;
+    height:220px;
+    border:solid;
+    border-bottom-width:medium;
+    
+    }
+    
+.tool
+{
+    margin-left:60px;
+    margin-top:15px;
+    
+    
+    width:80px;
+    }
